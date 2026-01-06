@@ -27,6 +27,8 @@ if ($device === 'windows') {
 $age = 20;
 $message = ($age >= 18) ? '成人です。' : '未成年です。';
 
+echo $age;
+
 // Q6 配列
 $prefecture = [
     '茨城県', 
