@@ -13,14 +13,10 @@ echo '現在時刻は、' . date('Y年m月d日 H時i分s秒') . 'です。';
 
 // Q4 条件分岐-1 if文
 $device = 'windows';
-if ($device === 'windows') {
-    echo '使用OSはwindowsです。';
+if ($device === 'windows' OR $device === 'mac') {
+    echo '使用OSは' . $device . 'です。';
 }else {
-    if ($device === 'mac') {
-        echo '使用OSはmacです。';
-    }else {
-        echo 'どちらでもありません。';
-    }
+    echo 'どちらでもありません。';
 }
 
 // Q5 条件分岐-2 三項演算子
@@ -83,7 +79,7 @@ $kantou = [
     '茨城県'
 ];
 
-foreach ( $prefecture as $prefecture => $city) {
+foreach ($prefecture as $prefecture => $city) {
     if (in_array($prefecture, $kantou, true)) {
         echo $prefecture . 'の県庁所在地は' . $city . 'です。';
     } else {
