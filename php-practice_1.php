@@ -79,11 +79,11 @@ $kantou = [
     '茨城県'
 ];
 
-foreach ($prefecture as $prefecture => $city) {
-    if (in_array($prefecture, $kantou, true)) {
-        echo $prefecture . 'の県庁所在地は' . $city . 'です。';
+foreach ($prefecture as $region => $city) {
+    if (in_array($region, $kantou, true)) {
+        echo $region . 'の県庁所在地は' . $city . 'です。' . "\n";
     } else {
-        echo $prefecture . 'は関東地方ではありません。' . "\n";
+        echo $region . 'は関東地方ではありません。' . "\n";
     }
 }
 
