@@ -20,7 +20,7 @@ echo $personalInfos[1]["name"] . 'の電話番号は' . $personalInfos[1]["tel"]
 $num = 1;
 foreach ($personalInfos as $info) {
     echo $num . '番目の'
-        . $info['name'] . 'さんのメールアドレスは'
+        . $info['name'] . 'のメールアドレスは'
         . $info['mail'] . 'で、電話番号は'
         . $info['tel'] . 'です。'
         . "\n";
