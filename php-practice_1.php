@@ -26,8 +26,7 @@ if ($device === 'windows') {
 // Q5 条件分岐-2 三項演算子
 $age = 20;
 $message = ($age >= 18) ? '成人です。' : '未成年です。';
-
-echo $age;
+echo $message;
 
 // Q6 配列
 $prefecture = [
@@ -39,7 +38,7 @@ $prefecture = [
     '神奈川県',
     '埼玉県'
 ];
-echo $prefecture[2] . 'と' . $prefecture[3] . 'は関東地方の都道府県です。'
+echo $prefecture[2] . 'と' . $prefecture[3] . 'は関東地方の都道府県です。';
 
 // Q7 連想配列-1
 $prefecture = [
@@ -75,13 +74,13 @@ $prefecture = [
 ];
 
 $kantou = [
-    '東京都' => '新宿区', 
-    '神奈川県' => '横浜市', 
-    '千葉県' => '千葉市', 
-    '埼玉県' => 'さいたま市', 
-    '栃木県' => '宇都宮市', 
-    '群馬県' => '前橋市',
-    '茨城県' => '水戸市'
+    '東京都', 
+    '神奈川県', 
+    '千葉県', 
+    '埼玉県', 
+    '栃木県', 
+    '群馬県',
+    '茨城県'
 ];
 
 foreach ( $prefecture as $prefecture => $city) {
